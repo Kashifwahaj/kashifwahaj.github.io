@@ -58,4 +58,17 @@
         justify-content: center;
         align-items: center;
     }
+    .contact-form input,.contact-form textarea {
+        width: 100%;
+        min-height: 30px;
+        border-radius: 5px;
+        outline: none;
+        color: #eafcc0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 23px;
+        padding: 10px;
+        border: none;
+        background: rgba(255, 255, 255, 0.06)
+    }
   }
