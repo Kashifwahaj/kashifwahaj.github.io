@@ -171,3 +171,12 @@ $(document).ready(function() {
   //       .hide()
   //   );
 });
+document.onreadystatechange = function() {
+  var state = document.readyState;
+  if (state == "interactive") {
+    document.getElementsByTagName("body")[0].style.overflow = "unset";
+    document.getElementsByClassName("loading")[0].style.display = "none";
+  } else if (state == "complete") {
+    // document.getElementsByClassName("loading")[0].style.display = "none";
+  }
+};
