@@ -5,6 +5,28 @@
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #75aac0; 
+  border-radius: 0px;
+  background: #145561;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#032331; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #032331; 
+}
 html {
   scroll-behavior: smooth;
 }
@@ -445,9 +467,8 @@ opacity: 0;
 
 .android:hover{
   transition-duration: 0.7s;
-  transition-timing-function: ease-in-out;
   z-index: 100;
-    transform: scale(1.3) translateY(-50px) rotateY(0deg) rotateZ(5deg)
+    transform: scale(1.3) translateY(-50px)
 }
 
 .mobile-hide {
