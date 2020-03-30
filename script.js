@@ -170,6 +170,28 @@ $(document).ready(function() {
   //       .eq(0)
   //       .hide()
   //   );
+
+  setInterval(() => {
+    if ($("#logo-animation").hasClass("logo-animate")) {
+      $("#logo-animation").removeClass("logo-animate");
+    } else {
+      $("#logo-animation").addClass("logo-animate");
+    }
+    setTimeout(() => {
+      if ($("#logo-animation").hasClass("fa-apple")) {
+        $("#logo-animation").removeClass("fa-apple");
+        $("#logo-animation").addClass("fa-android");
+        $("#logo-animation").addClass("color-android");
+      } else if ($("#logo-animation").hasClass("fa-android")) {
+        $("#logo-animation").removeClass("fa-android");
+        $("#logo-animation").removeClass("color-android");
+        $("#logo-animation").addClass("fa-chrome");
+      } else {
+        $("#logo-animation").removeClass("fa-chrome");
+        $("#logo-animation").addClass("fa-apple");
+      }
+    }, 500);
+  }, 2000);
 });
 document.onreadystatechange = function() {
   var state = document.readyState;
